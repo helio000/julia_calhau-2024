@@ -1,0 +1,42 @@
+1 - Crie um programa que imprima 11 vezes a frase " Hello World!"
+#include <stdio.h>
+
+int main() {
+    int i;
+    for (i = 0; i < 11; i++) {
+        printf("Hello World!\n");
+    }
+    return 0;
+}
+
+2 - Escrever um programa para exibir os números de 1 até 50 na tela
+#include <stdio.h>
+
+int main() {
+    int i;
+    for (i = 1; i <= 50; i++) {
+        printf("%d ", i);
+    }
+    printf("\n"); 
+
+    return 0;
+}
+
+3 -Faça um programa que mostre a tabuada de um número N (N será lido do teclado).
+#include <stdio.h>
+
+int main() {
+    int numero, i;
+
+    // Solicita ao usuário para inserir o número
+    printf("Digite um numero para exibir a tabuada: ");
+    scanf("%d", &numero);
+
+    // Exibe a tabuada
+    printf("Tabuada de %d:\n", numero);
+    for (i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", numero, i, numero * i);
+    }
+
+    return 0;
+}
