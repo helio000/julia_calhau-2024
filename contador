@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int contador = 1; // Corrigido para iniciar em 1
+    while(contador < 5) {
+        printf("contador: %d\n", contador);
+        contador++; // Atualizando o valor de contador
+    }
+    printf("acabou");
+    return 0; // Adicionado para indicar que o programa foi executado corretamente
+}
