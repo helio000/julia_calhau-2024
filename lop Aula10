@@ -1,0 +1,48 @@
+questão 1)
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    float num1, num2, resultado;
+
+    cout << "Digite o primeiro número: ";
+    cin >> num1;
+
+    cout << "Digite o segundo número: ";
+    cin >> num2;
+
+    resultado = num1 + num2;
+
+    cout << "O resultado da soma é: " << resultado << endl;
+
+    return 0;
+}
+questão 2
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char sexo;
+    float peso, pesoIdeal;
+
+    cout << "Digite seu sexo (M para Masculino, F para Feminino): ";
+    cin >> sexo;
+
+    cout << "Digite seu peso: ";
+    cin >> peso;
+
+    if (sexo == 'M') {
+        pesoIdeal = (peso - 100) * 0.9;
+    } else if (sexo == 'F') {
+        pesoIdeal = (peso - 100) * 0.85;
+    } else {
+        cout << "Sexo inválido!" << endl;
+        return 1;
+    }
+
+    cout << "Seu peso ideal é: " << pesoIdeal << " kg" << endl;
+
+    return 0;
+}
