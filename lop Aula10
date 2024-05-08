@@ -4,20 +4,43 @@ questão 1)
 using namespace std;
 
 int main() {
+    char operacao;
     float num1, num2, resultado;
 
-    cout << "Digite o primeiro número: ";
-    cin >> num1;
+    cout << "Escolha a operacao desejada (+, -, *, /): ";
+    cin >> operacao;
+    cout << "Digite dois numeros: ";
+    cin >> num1 >> num2;
 
-    cout << "Digite o segundo número: ";
-    cin >> num2;
-
-    resultado = num1 + num2;
-
-    cout << "O resultado da soma é: " << resultado << endl;
+    switch(operacao) {
+        case '+':
+            resultado = num1 + num2;
+            cout << "Resultado: " << resultado << endl;
+            break;
+        case '-':
+            resultado = num1 - num2;
+            cout << "Resultado: " << resultado << endl;
+            break;
+        case '*':
+            resultado = num1 * num2;
+            cout << "Resultado: " << resultado << endl;
+            break;
+        case '/':
+            if (num2 != 0) {
+                resultado = num1 / num2;
+                cout << "Resultado: " << resultado << endl;
+            } else {
+                cout << "Erro: divisao por zero!" << endl;
+            }
+            break;
+        default:
+            cout << "Operacao invalida!" << endl;
+    }
 
     return 0;
 }
+
+
 questão 2
 #include <iostream>
 
@@ -43,6 +66,10 @@ int main() {
     }
 
     cout << "Seu peso ideal é: " << pesoIdeal << " kg" << endl;
+
+questão 3
+
+
 
     return 0;
 }
