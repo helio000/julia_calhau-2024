@@ -1,75 +1,89 @@
 questão 1)
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
-    char operacao;
-    float num1, num2, resultado;
+    int calculo;
+    float num1, num2, a;
 
-    cout << "Escolha a operacao desejada (+, -, *, /): ";
-    cin >> operacao;
-    cout << "Digite dois numeros: ";
-    cin >> num1 >> num2;
+    printf("Digite uma opção de 1 a 4 sendo:\n1 - soma\n2 - subtração\n3 - divisão\n4 - multiplicação: ");
+    scanf("%d", &calculo);
 
-    switch(operacao) {
-        case '+':
-            resultado = num1 + num2;
-            cout << "Resultado: " << resultado << endl;
-            break;
-        case '-':
-            resultado = num1 - num2;
-            cout << "Resultado: " << resultado << endl;
-            break;
-        case '*':
-            resultado = num1 * num2;
-            cout << "Resultado: " << resultado << endl;
-            break;
-        case '/':
-            if (num2 != 0) {
-                resultado = num1 / num2;
-                cout << "Resultado: " << resultado << endl;
-            } else {
-                cout << "Erro: divisao por zero!" << endl;
-            }
-            break;
-        default:
-            cout << "Operacao invalida!" << endl;
+    switch (calculo) {
+
+    case 1:
+        printf("Digite o primeiro número: ");
+        scanf("%f", &num1);
+        printf("Digite o segundo número: ");
+        scanf("%f", &num2);
+        a = num1 + num2;
+        printf("A soma é: %.2f\n", a);
+        break;
+
+    case 2:
+        printf("Digite o primeiro número: ");
+        scanf("%f", &num1);
+        printf("Digite o segundo número: ");
+        scanf("%f", &num2);
+        a = num1 - num2;
+        printf("A subtração é: %.2f\n", a);
+        break;
+
+    case 3:
+        printf("Digite o primeiro número: ");
+        scanf("%f", &num1);
+        printf("Digite o segundo número: ");
+        scanf("%f", &num2);
+        if (num2 != 0) {
+            a = num1 / num2;
+            printf("A divisão é: %.2f\n", a);
+        } else {
+            printf("Erro: divisão por zero.\n");
+        }
+        break;
+
+    case 4:
+        printf("Digite o primeiro número: ");
+        scanf("%f", &num1);
+        printf("Digite o segundo número: ");
+        scanf("%f", &num2);
+        a = num1 * num2;
+        printf("A multiplicação é: %.2f\n", a);
+        break;
+
+    default:
+        printf("Opção inválida!\n");
     }
 
     return 0;
 }
 
-
 questão 2
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 int main() {
     char sexo;
-    float peso, pesoIdeal;
+    float peso, peso_ideal;
 
-    cout << "Digite seu sexo (M para Masculino, F para Feminino): ";
-    cin >> sexo;
+    printf("Digite o sexo (M/F): ");
+    scanf(" %c", &sexo);
 
-    cout << "Digite seu peso: ";
-    cin >> peso;
+    printf("Digite o peso atual: ");
+    scanf("%f", &peso);
 
-    if (sexo == 'M') {
-        pesoIdeal = (peso - 100) * 0.9;
-    } else if (sexo == 'F') {
-        pesoIdeal = (peso - 100) * 0.85;
-    } else {
-        cout << "Sexo inválido!" << endl;
-        return 1;
+    switch(sexo) {
+        case 'M':
+        case 'm':
+            peso_ideal = (peso - 100) * 0.9;
+            printf("O peso ideal para um homem é: %.2f kg\n", peso_ideal);
+            break;
+        case 'F':
+        case 'f':
+            peso_ideal = (peso - 100) * 0.85;
+            printf("O peso ideal para uma mulher é: %.2f kg\n", peso_ideal);
+            break;
+        default:
+            printf("Opção inválida. Por favor, digite 'M' ou 'F'.\n");
     }
-
-    cout << "Seu peso ideal é: " << pesoIdeal << " kg" << endl;
-
-questão 3
-
-
 
     return 0;
 }
