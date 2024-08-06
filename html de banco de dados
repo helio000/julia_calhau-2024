@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 2</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p><b>calhau!!!</b></p>
+    <h3><i>desenvolvimento de sistema</i></h3>
+    <p><sup>5 itinerário</sup></p>
+
+    <!-- Isso é um comentário -->
+    <p>então o exemplo de <sub>subscrito</sub></p>
+
+    <p>exemplo de: <ins>inserido</ins></p>
+
+    <p>exemplo de: <del>excluído</del></p>
+
+    <p class="center">exemplo de: <small>pequeno</small></p>
+
+    <p>exemplo de: <i><small><mark>mark</mark></small></i></p>
+    <p><b>isso é uma lista ordenada (ol = ordered list)</b></p>
+
+    <ol type="1">
+        <li>a lista ordenada sempre vai ser criada com a ordem de linha</li>
+        <li>a ordem das linhas sempre vai ser sequencial</li>
+        <li>por isso o nome ORDENADA</li>
+        <li>a tag ol significa ORDER LIST</li>
+    </ol>
+
+    <br><br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>idade</th>
+                <th>professâo</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Helio</td>
+                <td>19</td>
+                <td>aluno</td>
+            </tr>
+            <td>leonardo</td>
+            <td>17</td>
+            <td>aluno</td>
+            <tr>
+                <td>joâo</td>
+                <td>16</td>
+                <td>aluno</td>
+                </tr>
+        </tbody>
+    </table>
+
+    <a href="paginahelio.html">Direcionamento para outra página</a>
+    <p><a href="https://www.google.com">Google</a></p>
+
+    <img src="c:/Users/Desenvolvimento/Downloads/batman.jfif" alt="Imagem do Batman">
+
+    <br><br><br><br>
+</body>
+</html>
